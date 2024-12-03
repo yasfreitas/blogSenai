@@ -1,0 +1,35 @@
+<div class="product-form-container">
+    <h2>Publicar Post</h2>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="title">Nome</label>
+            <input type="text" id="title" name="title" [(ngModel)]="post.title" placeholder="Digite o titulo" required />
+        </div>
+
+        <div class="form-group">
+            <label for="author">Autor</label>
+            <input type="text" id="author" name="author" [(ngModel)]="post.author" placeholder="Digite o nome do autor" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Descrição</label>
+            <textarea
+                id="description"
+                name="description"
+                [(ngModel)]="post.description"
+                placeholder="Digite uma breve descrição"
+                required
+                rows="4"
+                cols="50">
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="imageUrl">URL da Imagem</label>
+            <input type="text" id="imageUrl" name="imageUrl" [(ngModel)]="post.imageUrl" placeholder="Insira a URL da imagem" required/>
+        </div>
+
+        <button type="submit">Publicar</button>
+    </form>
+</div>

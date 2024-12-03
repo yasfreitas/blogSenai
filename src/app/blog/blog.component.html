@@ -1,0 +1,14 @@
+<div class="blog-container">
+    <div *ngFor="let post of posts" class="card">
+        <img [src]="post.imageUrl" alt="{{ post.title }}" class="card-image">
+        <div class="card-date">{{ post.date | dataForma }}</div>
+        <div class="card-content">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.description }}</p>
+            <div class="card-footer">
+                <span>{{ post.author }}</span> | <span>{{ post.content }} Comments </span>
+            </div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</div>

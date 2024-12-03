@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+ul{ list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+a {
+
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
